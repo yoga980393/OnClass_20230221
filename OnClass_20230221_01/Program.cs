@@ -19,8 +19,8 @@ namespace OnClass_20230221_01
             {
                 list2.Add(list.Skip(count - i - 1).Take(1).First());
             }
+            
             int n = 0;
-
             foreach(var item in list2)
             {
                 Console.Write(item);
