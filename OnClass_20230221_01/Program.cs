@@ -12,9 +12,8 @@ namespace OnClass_20230221_01
         static void Main(string[] args)
         {
             Console.WriteLine("輸入帶,的字串");
-            var list = Console.ReadLine().Split(',').ToList();
-            var list2 = list.OrderByDescending(x => list.IndexOf(x));
-            Console.WriteLine(string.Join(",", list2));
+            var list = Console.ReadLine().Split(',').Reverse();
+            Console.WriteLine(string.Join(",", list));
         }
     }
 }
