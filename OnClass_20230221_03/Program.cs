@@ -12,13 +12,9 @@ namespace OnClass_20230221_03
         {
             Console.WriteLine("輸入一個數字：");
             int r = int.Parse(Console.ReadLine());
-            var list = new List<int>();
-            for(int i = 0; i < r; i++)
-            {
-                list.Add(r - i);
-            }
+            var list = Enumerable.Range(1, r).OrderByDescending(x => x).ToList();
 
-            foreach(var item in list)
+            foreach (var item in list)
             {
                 for(int i = 0; i < list.IndexOf(item) + 1; i++)
                 {
